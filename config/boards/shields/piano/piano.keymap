@@ -37,13 +37,13 @@
 
         combo_esc {
             timeout-ms = <30>;
-            key-positions = <14 15>;
+            key-positions = <16 17>;
             bindings = <&kp ESC>;
         };
 
         combo_enter {
             timeout-ms = <30>;
-            key-positions = <16 17>;
+            key-positions = <18 19>;
             bindings = <&kp ENTER>;
         };
     };
@@ -60,15 +60,15 @@
         };
     };
 
-    //      0   1   2       3   4   5
-    //  6   7   8   9       10  11  12  13
-    //          14  15      16  17
+    //  0   1   2   3       4   5   6   7
+    //  8   9   10  11      12  13  14  15
+    //          16  17      18  19
     keymap {
         compatible = "zmk,keymap";
 
         alpha1 {
             bindings = <
-                                &as LC(C) W     &as LC(X) F     &as LC(V) P                 &as LC(Z) L     &as LC(S) U     &as LC(Y) Y
+                &kp Q           &as LC(C) L     &as LC(X) G     &as LC(V) D                 &as LC(Z) H     &as LC(S) U     &as LC(Y) C     &kp Y
                 &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
                                                 &lt NAV TAB     &lt AL2 SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
@@ -76,7 +76,7 @@
 
         alpha2 {
             bindings = <
-                                &kp B           &kp G           &kp V                       &kp K           &kp M           &kp J
+                &kp B           &kp B           &kp G           &kp V                       &kp K           &kp M           &kp J           &kp B
                 &kp Q           &kp Z           &mt LSHIFT X    &kp C                       &kp H           &mt LSHIFT D    &kp FSLH        AS(SEMI)
                                                 &none           &none                       &kp COMMA       &kp DOT
             >;
@@ -84,7 +84,7 @@
 
         num {
             bindings = <
-                                &kp N1          &kp N2          &kp N3                      &kp N7          &kp N8          &kp N9
+                &kp B           &kp N1          &kp N2          &kp N3                      &kp N7          &kp N8          &kp N9          &kp B
                 &kp GRAVE       &kp N4          &mt LSHIFT N5   &kp N6                      &kp N0          &mt LSHIFT LBKT &kp RBKT        AS(BSLH)
                                                 &kp MINUS       &kp EQUAL                   &none           &none
             >;
@@ -92,7 +92,7 @@
 
         nav {
             bindings = <
-                                &none           &kp PG_UP        &none                      &none           &kp UP          &none
+                &kp B           &none           &kp PG_UP        &none                      &none           &kp UP          &none           &kp B
                 &none           &mt LALT HOME   &mt LSHIFT PG_DN &mt LCTL END               &mt RCTL LEFT   &mt RSHIFT DOWN &mt RALT RIGHT  &kp RPAR
                                                 &none            &none                      &none           &kp LPAR
             >;
@@ -100,7 +100,7 @@
 
         fun {
             bindings = <
-                                &kp PSCRN       &kp F2          &kp F5                      &none           &caps_word           &none
+                &kp B           &kp PSCRN       &kp F2          &kp F5                      &none           &caps_word      &none           &none
                 &none           &kp F10         &kp F11         &kp F12                     AS(SQT)         &none           &none           &none
                                                 &none           &none                       &none           &none
             >;
