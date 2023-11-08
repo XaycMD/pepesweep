@@ -58,7 +58,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
+    };lдпвфергнтушшщ оцлзфьибюж
 
     //  0   1   2   3       4   5   6   7
     //  8   9   10  11      12  13  14  15
@@ -68,8 +68,8 @@
 
         alpha1 {
             bindings = <
-                &kp Q           &as LC(C) L     &as LC(X) G     &as LC(V) D                 &as LC(Z) H     &as LC(S) U     &as LC(Y) C     &kp Y
-                &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
+                &kp Q           &as LC(C) L     &as LC(X) G     &as LC(V) D                 &as LC(Z) H     &as LC(S) U     &as LC(Y) O     &kp Y
+                &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI C
                                                 &lt NAV TAB     &lt AL2 SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
         };
