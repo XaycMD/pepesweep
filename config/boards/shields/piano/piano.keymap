@@ -69,7 +69,7 @@
         alpha1 {
             bindings = <
                 &kp Q           &as LC(C) L     &as LC(X) G     &as LC(V) D                 &as LC(Z) H     &as LC(S) U     &as LC(Y) O     &kp Y
-                &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI C
+                &mt LGUI I      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT A      &mt RGUI C
                                                 &lt NAV TAB     &lt AL2 SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
         };
