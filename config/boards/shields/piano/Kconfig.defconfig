@@ -10,7 +10,7 @@ config ZMK_USB
 if SHIELD_PIANO_DONGLE || SHIELD_PIANO_NORM_LEFT || SHIELD_PIANO_NORM_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "The Piano"
+	default "Pepesweep"
 
 endif
 if SHIELD_PUNI
