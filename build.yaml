@@ -24,4 +24,4 @@ include:
   - board: nice_nano_v2
     shield: piano_norm_right
   - board: nice_nano_v2
-    shield: puni
+    shield: settings_reset
