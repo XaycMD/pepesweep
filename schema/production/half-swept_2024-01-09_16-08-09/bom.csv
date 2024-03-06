@@ -1,6 +1,0 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
-"B+, B-",1pin_conn,2,MountingHole_Pad,
-POWER SW,SPDT_C128955,1,SW_SPDT,
-RSW2,Tactile-Switch_SMT,1,SW_Push,
-"SW1, SW10, SW2, SW3, SW4, SW5, SW6, SW7, SW8, SW9",SW_PG1350_rev_DPB,10,SW_Push,
-U1,ProMicro_jumpers_facedown,1,ProMicro-kbd,
