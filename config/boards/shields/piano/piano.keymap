@@ -85,34 +85,6 @@
             layers = <AL1 AL2 NUM NAV FUN>;
         };
 
-        combo_test01 {
-            timeout-ms = <30>;
-            key-positions = <0 1>;
-            bindings = <&kp N0>;
-            layers = <AL1 AL2 NUM NAV FUN>;
-        };
-
-        combo_test02 {
-            timeout-ms = <30>;
-            key-positions = <0 2>;
-            bindings = <&kp N1>;
-            layers = <AL1 AL2 NUM NAV FUN>;
-        };
-
-        combo_test89 {
-            timeout-ms = <30>;
-            key-positions = <8 9>;
-            bindings = <&kp N2>;
-            layers = <AL1 AL2 NUM NAV FUN>;
-        };
-
-        combo_test317 {
-            timeout-ms = <30>;
-            key-positions = <3 17>;
-            bindings = <&kp N3>;
-            layers = <AL1 AL2 NUM NAV FUN>;
-        };
-
         combo_taipo {
             timeout-ms = <30>;
             key-positions = <BLP BRP>;
