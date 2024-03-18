@@ -152,9 +152,9 @@
 
         taipo {
             bindings = <
-                &none           &as LC(C) &none     &as LC(X) &none     &as LC(V) &none                 &as LC(Z) &none  &as LC(S) &none    &as LC(Y) &none &none
-                &none           &none               &none               &none                           &none            &none              &none           &none
-                                                    &none               &none                           &none            &none
+                &none           &none        &none           &none                          &none            &none          &none           &none
+                &none           &none        &none           &none                          &none            &none          &none           &none
+                                             &none           &none                          &none            &none
             >;
         };
     };
