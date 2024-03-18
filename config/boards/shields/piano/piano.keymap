@@ -75,12 +75,14 @@
             timeout-ms = <30>;
             key-positions = <LIT LOT>;
             bindings = <&kp ESC>;
+            layers = <AL1, AL2, NUM, NAV, FUN>;
         };
 
         combo_enter {
             timeout-ms = <30>;
             key-positions = <ROT RIT>;
             bindings = <&kp ENTER>;
+            layers = <AL1, AL2, NUM, NAV, FUN>;
         };
 
         combo_taipo {
