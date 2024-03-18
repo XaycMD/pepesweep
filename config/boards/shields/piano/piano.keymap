@@ -7,7 +7,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
+
+// CONFIG
+#define COMBO_TIMEOUT 70
+#define COMBO_LAYERS 5
+#define STICKY_TIMEOUT 500
 
 &mt {
     tapping-term-ms = <200>;
@@ -23,29 +28,68 @@
     continue-list = <UNDERSCORE MINUS>, <BACKSPACE>, <DELETE>;
 };
 
+&sk {
+    release-after-ms = <STICKY_TIMEOUT>;
+    quick-release;
+};
+
 #define AS(keycode) &as LS(keycode) keycode
 
-// Layers
+// LAYERS
 #define AL1 0
 #define AL2 1
 #define NUM 2
 #define NAV 3
 #define FUN 4
+#define TAI 5
+
+// LEFT SIDE
+#define TLI 3  // TOP
+#define TLM 2  // TOP
+#define TLR 1  // TOP
+#define TLP 0  // TOP
+#define BLI 11 // BOTTOM
+#define BLM 10 // BOTTOM
+#define BLR 9  // BOTTOM
+#define BLP 8  // BOTTOM
+#define LOT 17 // O-THUMB
+#define LIT 16 // I-THUMB
+
+// RIGHT SIDE
+#define TRI 4  // TOP
+#define TRM 5  // TOP
+#define TRR 6  // TOP
+#define TRP 7  // TOP
+#define BRI 12 // BOTTOM
+#define BRM 13 // BOTTOM
+#define BRR 14 // BOTTOM
+#define BRP 15 // BOTTOM
+#define ROT 18 // O-THUMB
+#define RIT 19 // I-THUMB
+
 / {
     combos {
         compatible = "zmk,combos";
 
         combo_esc {
             timeout-ms = <30>;
-            key-positions = <16 17>;
+            key-positions = <LIT LOT>;
             bindings = <&kp ESC>;
         };
 
         combo_enter {
             timeout-ms = <30>;
-            key-positions = <18 19>;
+            key-positions = <ROT RIT>;
             bindings = <&kp ENTER>;
         };
+
+        combo_taipo {
+            timeout-ms = <30>;
+            key-positions = <BLP BRP>;
+            bindings = <&tog TAI>;
+        };
+
+        #include "taipo.dtsi"
     };
 
     behaviors {
@@ -103,6 +147,14 @@
                 &kp PSCRN       &kp F1       &kp F2          &kp F3                         &kp F7           &kp F8         &kp F9          &none
                 &none           &kp F4       &kp F5          &kp F6                         &kp F10          &kp F11        &kp F12         &none
                                              &none           &none                          &none            &none
+            >;
+        };
+
+        taipo {
+            bindings = <
+                &none           &as LC(C) &none     &as LC(X) &none     &as LC(V) &none                 &as LC(Z) &none  &as LC(S) &none    &as LC(Y) &none &none
+                &none           &none               &none               &none                           &none            &none              &none           &none
+                                                    &none               &none                           &none            &none
             >;
         };
     };
