@@ -114,5 +114,5 @@ TCOMBO(TAB,    &kp TAB,    &kp DEL,   &kp INS,    &none,        TLR TLM TLI, TRR
 TCOMBO(ENTER,  &kp ENTER,  &kp ESC,   &kp LALT,   &none,        BLR BLM BLI, BRR BRM BRI)
 TCOMBO(LGUI,   &sk LGUI,   &kp RIGHT, &kp END,    &none,        TLP BLP,     TRP BRP)
 TCOMBO(LALT,   &sk LALT,   &kp UP,    &kp PGUP,   &none,        TLR BLR,     TRR BRR)
-TCOMBO(LCTRL,  &sk LCTRL,  &kp DOWN,  &kp PGDN,   &none,        TLM BLM,     TRM BRM)
-TCOMBO(LSHIFT, &sk LSHIFT, &kp LEFT,  &kp HOME,   &none,        TLI BLI,     TRI BRI)
+TCOMBO(LSHIFT,  &sk LSHIFT,  &kp DOWN,  &kp PGDN,   &none,        TLM BLM,     TRM BRM)
+TCOMBO(LCTRL, &sk LCTRL, &kp LEFT,  &kp HOME,   &none,        TLI BLI,     TRI BRI)
