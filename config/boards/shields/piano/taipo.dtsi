@@ -77,7 +77,7 @@ combo_r_bspc { \
 };
 
 TCOMBO(R,      &kp R,      &kp LS(R), &kp GT,     &kp PSCRN,    TLP,         TRP)
-TCOMBO(S,      &kp S,      &kp LS(S), &kp RBRC,   &kp &none,    TLR,         TRR)
+TCOMBO(S,      &kp S,      &kp LS(S), &kp RBRC,   &kp LC(S),    TLR,         TRR)
 TCOMBO(N,      &kp N,      &kp LS(N), &kp RBKT,   &kp &none,    TLM,         TRM)
 TCOMBO(I,      &kp I,      &kp LS(I), &kp RPAR,   &kp &none,    TLI,         TRI)
 TCOMBO(A,      &kp A,      &kp LS(A), &kp LT,     &kp &none,    BLP,         BRP)
