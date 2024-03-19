@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // CONFIG
-#define COMBO_TIMEOUT 70
+#define COMBO_TIMEOUT 30
 #define COMBO_LAYERS 5
 #define STICKY_TIMEOUT 500
 
