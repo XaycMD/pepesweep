@@ -48,8 +48,6 @@
             key-positions = <18 19>;
             bindings = <&kp ENTER>;
         };
-
-        #include "taipo.dtsi"
     };
 
     behaviors {
